@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="InvalidId">
+
+    <TextView
+        android:id="@+id/settingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme setting"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/themeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/settingTextView"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/themeTextView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
